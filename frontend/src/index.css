@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f8fafc;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Color bar */
+.color-scale {
+  background: linear-gradient(to right, #2563eb, #38bdf8, #4ade80, #facc15, #f97316, #ef4444);
+  height: 6px;
+  border-radius: 3px;
+  width: 100%;
+}
+
+/* Map placeholders */
+.map-bg {
+  background-color: #e2e8f0;
+  background-image: url('https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=800');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.map-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(135deg, rgba(37,99,235,0.6) 0%, rgba(74,222,128,0.6) 50%, rgba(239,68,68,0.6) 100%);
+  mix-blend-mode: overlay;
+}
+
+.card {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
